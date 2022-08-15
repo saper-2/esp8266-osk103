@@ -1,0 +1,292 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4250 1850 4700 1850
+Wire Wire Line
+	4250 1950 4700 1950
+Wire Wire Line
+	4250 2050 4500 2050
+Wire Wire Line
+	4250 2150 4500 2150
+Wire Wire Line
+	4250 2250 4350 2250
+Wire Wire Line
+	4350 2250 4350 2400
+$Comp
+L power:GND #PWR06
+U 1 1 60C375A8
+P 4350 2400
+F 0 "#PWR06" H 4350 2150 50  0001 C CNN
+F 1 "GND" H 4350 2250 50  0000 C CNN
+F 2 "" H 4350 2400 50  0001 C CNN
+F 3 "" H 4350 2400 50  0001 C CNN
+	1    4350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR05
+U 1 1 60C462A9
+P 5500 1450
+F 0 "#PWR05" H 5500 1300 50  0001 C CNN
+F 1 "VCC" H 5500 1600 50  0000 C CNN
+F 2 "" H 5500 1450 50  0001 C CNN
+F 3 "" H 5500 1450 50  0001 C CNN
+	1    5500 1450
+	1    0    0    -1  
+$EndComp
+Text Label 4700 1950 2    50   ~ 0
+IO0
+Text Label 4700 1850 2    50   ~ 0
+RST
+Text Label 4500 2050 2    50   ~ 0
+Rx
+Text Label 4500 2150 2    50   ~ 0
+Tx
+$Comp
+L my-conn:TP_1 TP2
+U 1 1 6142E35C
+P 6500 1000
+F 0 "TP2" H 6640 1080 50  0000 L CNN
+F 1 "TP" H 6700 1000 50  0001 L CNN
+F 2 "MyConnectors:PAD_SpingProbe_R50-2C" H 6500 1000 50  0001 C CNN
+F 3 "" H 6500 1000 50  0001 C CNN
+F 4 "3V3" H 6700 1000 50  0000 L CNN "SigName"
+	1    6500 1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L my-conn:TP_1 TP3
+U 1 1 6142FDDB
+P 6500 1200
+F 0 "TP3" H 6640 1280 50  0000 L CNN
+F 1 "TP" H 6700 1200 50  0001 L CNN
+F 2 "MyConnectors:PAD_SpingProbe_R50-2C" H 6500 1200 50  0001 C CNN
+F 3 "" H 6500 1200 50  0001 C CNN
+F 4 "RST" H 6700 1200 50  0000 L CNN "SigName"
+	1    6500 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L my-conn:TP_1 TP4
+U 1 1 61430400
+P 6500 1400
+F 0 "TP4" H 6640 1480 50  0000 L CNN
+F 1 "TP" H 6700 1400 50  0001 L CNN
+F 2 "MyConnectors:PAD_SpingProbe_R50-2C" H 6500 1400 50  0001 C CNN
+F 3 "" H 6500 1400 50  0001 C CNN
+F 4 "IO0" H 6700 1400 50  0000 L CNN "SigName"
+	1    6500 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L my-conn:TP_1 TP5
+U 1 1 61430739
+P 6500 1600
+F 0 "TP5" H 6640 1680 50  0000 L CNN
+F 1 "TP" H 6700 1600 50  0001 L CNN
+F 2 "MyConnectors:PAD_SpingProbe_R50-2C" H 6500 1600 50  0001 C CNN
+F 3 "" H 6500 1600 50  0001 C CNN
+F 4 "RX" H 6700 1600 50  0000 L CNN "SigName"
+	1    6500 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L my-conn:TP_1 TP6
+U 1 1 6143096A
+P 6500 1800
+F 0 "TP6" H 6640 1880 50  0000 L CNN
+F 1 "TP" H 6700 1800 50  0001 L CNN
+F 2 "MyConnectors:PAD_SpingProbe_R50-2C" H 6500 1800 50  0001 C CNN
+F 3 "" H 6500 1800 50  0001 C CNN
+F 4 "TX" H 6700 1800 50  0000 L CNN "SigName"
+	1    6500 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L my-conn:TP_1 TP7
+U 1 1 61430F1B
+P 6500 2000
+F 0 "TP7" H 6640 2080 50  0000 L CNN
+F 1 "TP" H 6700 2000 50  0001 L CNN
+F 2 "MyConnectors:PAD_SpingProbe_R50-2C" H 6500 2000 50  0001 C CNN
+F 3 "" H 6500 2000 50  0001 C CNN
+F 4 "GND" H 6700 2000 50  0000 L CNN "SigName"
+	1    6500 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L my-conn:TP_1 TP1
+U 1 1 61438285
+P 6500 800
+F 0 "TP1" H 6640 880 50  0000 L CNN
+F 1 "TP" H 6700 800 50  0001 L CNN
+F 2 "MyConnectors:PAD_SpingProbe_R50-2C" H 6500 800 50  0001 C CNN
+F 3 "" H 6500 800 50  0001 C CNN
+F 4 "5V" H 6700 800 50  0000 L CNN "SigName"
+	1    6500 800 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR018
+U 1 1 61438A91
+P 6600 2050
+F 0 "#PWR018" H 6600 1800 50  0001 C CNN
+F 1 "GND" H 6600 1900 50  0000 C CNN
+F 2 "" H 6600 2050 50  0001 C CNN
+F 3 "" H 6600 2050 50  0001 C CNN
+	1    6600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR019
+U 1 1 61438DDD
+P 6800 950
+F 0 "#PWR019" H 6800 800 50  0001 C CNN
+F 1 "VCC" H 6800 1100 50  0000 C CNN
+F 2 "" H 6800 950 50  0001 C CNN
+F 3 "" H 6800 950 50  0001 C CNN
+	1    6800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR017
+U 1 1 614399FD
+P 6600 750
+F 0 "#PWR017" H 6600 600 50  0001 C CNN
+F 1 "+5V" H 6600 890 50  0000 C CNN
+F 2 "" H 6600 750 50  0001 C CNN
+F 3 "" H 6600 750 50  0001 C CNN
+	1    6600 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 800  6600 800 
+Wire Wire Line
+	6600 800  6600 750 
+Wire Wire Line
+	6500 1000 6800 1000
+Wire Wire Line
+	6800 1000 6800 950 
+Wire Wire Line
+	6600 2000 6600 2050
+Wire Wire Line
+	6500 2000 6600 2000
+Wire Wire Line
+	6500 1800 7000 1800
+Wire Wire Line
+	6500 1600 7000 1600
+Wire Wire Line
+	6500 1400 7000 1400
+Wire Wire Line
+	6500 1200 7000 1200
+Text Label 7000 1200 2    50   ~ 0
+RST
+Text Label 7000 1400 2    50   ~ 0
+IO0
+Text Label 7000 1600 2    50   ~ 0
+Rx
+Text Label 7000 1800 2    50   ~ 0
+Tx
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 613C8AE7
+P 4350 900
+F 0 "MH1" H 4350 1100 50  0000 C CNN
+F 1 "3mm" H 4350 1025 50  0001 C CNN
+F 2 "MyMechanicals:MHOLE-3.2MM" H 4350 900 50  0001 C CNN
+F 3 "~" H 4350 900 50  0001 C CNN
+	1    4350 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH3
+U 1 1 613C950F
+P 5050 900
+F 0 "MH3" H 5050 1100 50  0000 C CNN
+F 1 "3mm" H 5050 1025 50  0001 C CNN
+F 2 "MyMechanicals:MHOLE-3.2MM" H 5050 900 50  0001 C CNN
+F 3 "~" H 5050 900 50  0001 C CNN
+	1    5050 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR01
+U 1 1 613CE700
+P 4550 1350
+F 0 "#PWR01" H 4550 1200 50  0001 C CNN
+F 1 "+5V" H 4550 1490 50  0000 C CNN
+F 2 "" H 4550 1350 50  0001 C CNN
+F 3 "" H 4550 1350 50  0001 C CNN
+	1    4550 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP1
+U 1 1 613CF35D
+P 5000 1500
+F 0 "JP1" H 4900 1400 50  0000 C CNN
+F 1 "PowerSel" H 5000 1610 50  0000 C CNN
+F 2 "MyHeaders:HDR1X03_V" H 5000 1500 50  0001 C CNN
+F 3 "~" H 5000 1500 50  0001 C CNN
+	1    5000 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1450 5500 1500
+Wire Wire Line
+	5500 1500 5250 1500
+Wire Wire Line
+	5000 1650 5000 1750
+Wire Wire Line
+	4250 1750 5000 1750
+Text Label 4550 1750 0    50   ~ 0
+3V3
+$Comp
+L Connector_Generic:Conn_01x07 J1
+U 1 1 613D1547
+P 4050 1950
+F 0 "J1" H 4050 2350 50  0000 C CNN
+F 1 "PROG" H 4050 1550 50  0000 C CNN
+F 2 "MyHeaders:HDR1X07_V" H 4050 1950 50  0001 C CNN
+F 3 "~" H 4050 1950 50  0001 C CNN
+	1    4050 1950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 613D25C1
+P 4400 1500
+F 0 "JP2" H 4400 1450 50  0000 C CNN
+F 1 "5V-ON" H 4410 1440 50  0001 C CNN
+F 2 "MyHeaders:HDR1X02_V" H 4400 1500 50  0001 C CNN
+F 3 "~" H 4400 1500 50  0001 C CNN
+	1    4400 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4250 1650 4300 1650
+Wire Wire Line
+	4300 1650 4300 1500
+Wire Wire Line
+	4500 1500 4550 1500
+Wire Wire Line
+	4550 1350 4550 1500
+Connection ~ 4550 1500
+Wire Wire Line
+	4550 1500 4750 1500
+Text Label 4300 1650 0    50   ~ 0
+5V
+$EndSCHEMATC
